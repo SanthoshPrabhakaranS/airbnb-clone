@@ -59,7 +59,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
       e.stopPropagation();
       mutate(reservation?.id);
     },
-    [reservation?.id]
+    [reservation?.id, mutate]
   );
 
   //Delete property
